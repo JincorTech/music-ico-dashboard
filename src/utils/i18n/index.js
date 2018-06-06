@@ -61,7 +61,6 @@ const en = {
   common: require('../../assets/locales/en/common.json'),
   auth: require('../../assets/locales/en/auth.json'),
   dashboard: require('../../assets/locales/en/dashboard.json'),
-  referrals: require('../../assets/locales/en/referrals.json'),
   transactions: require('../../assets/locales/en/transactions.json'),
   verification: require('../../assets/locales/en/verification.json'),
 };
@@ -83,7 +82,6 @@ i18next
         common: en.common,
         auth: en.auth,
         dashboard: en.dashboard,
-        referrals: en.referrals,
         transactions: en.transactions,
         verification: en.verification
       }
