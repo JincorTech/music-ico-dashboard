@@ -2,7 +2,6 @@ export const BASE = '/';
 
 export const DASHBOARD = '/dashboard';
 export const TRANSACTIONS = '/transactions';
-export const REFERRALS = '/referrals';
 export const WITHDRAW = '/withdraw';
 export const SETTINGS = '/settings';
 export const KYC_VERIFICATION = '/kyc';

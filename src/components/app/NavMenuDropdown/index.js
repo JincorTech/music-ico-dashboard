@@ -36,15 +36,6 @@ const NavMenuDropdown = (props) => {
               <span>{t('topbar.nav.txs')}</span>
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to={routes.REFERRALS}
-              className="pt-popover-dismiss pt-menu-item"
-              tabIndex="0">
-              <Icon icon={IconNames.PEOPLE}/>
-              <span>{t('topbar.nav.referral')}</span>
-            </NavLink>
-          </li>
           {!kyc
             ? (
               <li>
