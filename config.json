@@ -1,5 +1,5 @@
 {
-  "companyName": "Music ICO",
+  "companyName": "To the moon",
   "tokenName": "MUSIC",
   "tokenSymbol": "MUS",
   "etherscanUrl": "https://ropsten.etherscan.io",
@@ -9,8 +9,8 @@
   "minEthContribution": "0.1",
   "referralMinEthContribution": "10",
 
-  "supportEmail": "support@music.io",
-  "referralEmail": "partners@music.io",
+  "supportEmail": "support@tothemoon.io",
+  "referralEmail": "partners@tothemoon.io",
 
   "agreementDoc": "https://secretech.io/storage/agreement.pdf",
   "whitepaperDoc": "https://secretech.io/storage/whitepaper.pdf",
@@ -23,5 +23,5 @@
   "linkedinLink": "in.com",
   "bitcointalkLink": "bt.com",
 
-  "appTitle": "The first music ICO"
+  "appTitle": "To the moon IMO"
 }
