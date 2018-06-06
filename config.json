@@ -1,0 +1,27 @@
+{
+  "companyName": "Music ICO",
+  "tokenName": "MUSIC",
+  "tokenSymbol": "MUS",
+  "etherscanUrl": "https://ropsten.etherscan.io",
+  "landingPageDomain": "https://icodashboard.space",
+  "domain": "https://demo.icodashboard.space",
+
+  "minEthContribution": "0.1",
+  "referralMinEthContribution": "10",
+
+  "supportEmail": "support@music.io",
+  "referralEmail": "partners@music.io",
+
+  "agreementDoc": "https://secretech.io/storage/agreement.pdf",
+  "whitepaperDoc": "https://secretech.io/storage/whitepaper.pdf",
+  "yellowpaperDoc": "https://secretech.io/storage/yellowpaper.pdf",
+
+  "telegramLink": "tg.com",
+  "facebookLink": "fb.com",
+  "twitterLink": "tw.com",
+  "mediumLink": "md.com",
+  "linkedinLink": "in.com",
+  "bitcointalkLink": "bt.com",
+
+  "appTitle": "The first music ICO"
+}

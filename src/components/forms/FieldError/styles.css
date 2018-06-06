@@ -1,0 +1,11 @@
+.fieldElement {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.error {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: left;
+  color: #db3737;
+}
