@@ -20,7 +20,6 @@ const initialState = from({
   fetching: false,
   email: '',
   password: '',
-  referral: '',
   agreeTos: false,
   verification: {
     verificationId: '',
@@ -50,7 +49,6 @@ export default createReducer({
       fetching: false,
       email: payload.email,
       password: payload.password,
-      referral: payload.referral,
       agreeTos: payload.agreeTos
     })
   ),

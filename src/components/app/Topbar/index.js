@@ -25,9 +25,6 @@ const Topbar = (props) => {
         <NavLink className="pt-button pt-minimal" key={routes.TRANSACTIONS} to={routes.TRANSACTIONS}>
           <Icon icon='exchange'/><span>{t('topbar.nav.txs')}</span>
         </NavLink>
-        <NavLink className="pt-button pt-minimal" key={routes.REFERRALS} to={routes.REFERRALS}>
-          <Icon icon='people'/><span>{t('topbar.nav.referral')}</span>
-        </NavLink>
         {!kyc
           ? (
             <NavLink className="pt-button pt-minimal" to={routes.KYC_VERIFICATION}>
