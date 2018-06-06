@@ -20,7 +20,6 @@ const SignUp = (props) => {
     fetching,
     email,
     password,
-    referral,
     agreeTos,
     closeWalletCreds,
     verification: {
@@ -47,16 +46,6 @@ const SignUp = (props) => {
       );
     }
 
-    if (currentStep === 'initSignUp' && qp.referral) {
-      return (
-        <InitSignUpForm
-          onSubmit={initSignUp}
-          fetching={fetching}
-          referral={qp.referral}
-          initialValues={{ referral: qp.referral }}/>
-      );
-    }
-
     if (currentStep === 'initSignUp') {
       return (
         <InitSignUpForm
@@ -73,7 +62,6 @@ const SignUp = (props) => {
           initialValues={{
             email,
             password,
-            referral,
             agreeTos,
             dob: null
           }}/>

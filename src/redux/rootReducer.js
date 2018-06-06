@@ -12,9 +12,6 @@ import signIn from './modules/auth/signIn';
 import signUp from './modules/auth/signUp';
 import resetPassword from './modules/auth/resetPassword';
 
-import referrals from './modules/referrals/referrals';
-import invitePopup from './modules/referrals/invitePopup';
-
 import changePasswordReducer from './modules/settings/changePassword';
 import enableTwoFactorAuth from './modules/settings/enableTwoFactorAuth';
 import disableTwoFactorAuth from './modules/settings/disableTwoFactorAuth';
@@ -47,11 +44,6 @@ export default combineReducers({
     signIn,
     signUp,
     resetPassword
-  }),
-
-  referrals: combineReducers({
-    referrals,
-    invitePopup
   }),
 
   account: combineReducers({

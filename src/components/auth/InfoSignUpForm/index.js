@@ -92,7 +92,6 @@ const FormComponent = reduxForm({
   initialValues: {
     email: '',
     password: '',
-    referral: '',
     agreeTos: true,
     fistName: '',
     lastName: '',
