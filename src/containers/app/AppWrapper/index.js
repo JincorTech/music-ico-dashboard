@@ -9,7 +9,6 @@ import Topbar from '../../../components/app/Topbar';
 import MakeDepositPopup from '../MakeDepositPopup';
 import KycAlertPopup from '../KycAlertPopup';
 import Dashboard from '../../dashboard/Dashboard';
-import Referrals from '../../referrals/Referrals';
 import Transactions from '../../transactions/Transactions';
 import Settings from '../../settings/Settings';
 import Shuftipro from '../../../components/verification/Shuftipro';
@@ -39,7 +38,6 @@ class AppWrapper extends Component {
         </div>
         <Switch>
           <Route exact path={routes.DASHBOARD} component={Dashboard}/>
-          <Route exact path={routes.REFERRALS} component={Referrals}/>
           <Route exact path={routes.TRANSACTIONS} component={Transactions}/>
           <Route exact path={routes.SETTINGS} component={Settings}/>
           <Route exact path={routes.KYC_VERIFICATION} component={Shuftipro}/>

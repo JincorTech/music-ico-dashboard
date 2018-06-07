@@ -10,6 +10,7 @@ import BalanceInfo from '../BalanceInfo';
 import IcoStatus from '../IcoStatus';
 import Creds from '../../../components/dashboard/Creds';
 import VerifyBuyTokensPopup from '../VerifyBuyTokensPopup';
+import TopContributors from '../TopContributors';
 
 class Dashboard extends Component {
   componentDidMount() {
@@ -22,16 +23,19 @@ class Dashboard extends Component {
   render() {
     return (
       <div className={s.wrapper}>
-        <div className={s.main}>
-          <div className={s.buyTokensForm}>
-            <BuyTokensForm/>
-          </div>
-        </div>
-
         <div className={s.col}>
           <div className={s.widget}><BalanceInfo/></div>
           <div className={s.widget}><IcoStatus/></div>
           <div className={s.widget}><Creds/></div>
+        </div>
+
+        <div className={s.main}>
+          <div className={s.buyTokensForm}>
+            <BuyTokensForm/>
+          </div>
+          <div className={s.top}>
+            <TopContributors/>
+          </div>
         </div>
 
         <VerifyBuyTokensPopup/>

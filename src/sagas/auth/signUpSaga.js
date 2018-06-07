@@ -35,8 +35,7 @@ function* initSignUpSaga() {
 
 function* infoSignUpIterator({ payload }) {
   try {
-    const { referral, ...restPayload } = payload; // if referral empty - not send
-    const data = yield call(post, '/user', referral ? payload : restPayload);
+    const data = yield call(post, '/user', payload);
     yield put(infoSignUp.success(data));
     yield put(changeStep('verifySignUp'));
   } catch (e) {

@@ -132,26 +132,6 @@ const getMock = (path) => {
         jumioIdScanReference: '7b58a08e-19cf-4d28-a828-4bb577c6f69a'
       };
 
-    case '/dashboard/referral':
-      return {
-        data: 'dGVzdEB0ZXN0LmNvbQ',
-        referralCount: 5,
-        users: [
-          {
-            date: 1493147207,
-            name: 'Investor 1',
-            walletAddress: '0x54c0B824d575c60F3B80ba1ea3A0cCb5EE3F56eA',
-            tokens: '105'
-          },
-          {
-            date: 1524683207,
-            name: 'Investor 2',
-            walletAddress: '0x54c0B824d575c60F3B80ba1ea3A0cCb5EE3F56eB',
-            tokens: '1.01'
-          }
-        ]
-      };
-
     default:
       console.log('!!! UNCATCHED GET PATH', path);
       return {};
@@ -237,8 +217,6 @@ const postMock = (path, body) => {
         },
         isVerified: false,
         defaultVerificationMethod: 'email',
-        referralCode: 'b3J0Z21hQGdtYWlsLmNvbQ',
-        referral: 'test@test.com',
         source: {
           utm: 'utm',
           gtm: 'gtm'
