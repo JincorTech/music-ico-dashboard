@@ -56,12 +56,7 @@
 }
 
 .tipSection {
-  position: absolute;
   margin-top: 40px;
-
-  @media only screen and (max-width: 768px) {
-    position: relative;
-  }
 }
 
 .alertsSection {

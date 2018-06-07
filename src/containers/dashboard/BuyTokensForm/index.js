@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import BigNum from 'bignumber.js';
 import { translate } from 'react-i18next';
 import cx from 'classnames';
-import { Icon, Intent } from '@blueprintjs/core';
 import s from './styles.scss';
 
 import { ethInvest } from '../../../utils/validators';
@@ -16,7 +15,6 @@ import { openKycAlertPopup } from '../../../redux/modules/app/kycAlertPopup';
 import MnemonicPopup from '../MnemonicPopup';
 import RenderInput from '../../../components/forms/RenderInput';
 import Button from '../../../components/common/Button';
-import * as routes from '../../../routes';
 
 // TODO require refactoring
 
@@ -102,26 +100,6 @@ class BuyTokensForm extends Component {
       return 0;
     };
 
-    const renderVerificationAlert = () => {
-      if (!kycIsVerified(kycStatus)) {
-        return (
-          <div className={cx(s.alert, 'pt-callout pt-intent-danger')}>
-            <Icon icon='info-sign' intent={Intent.DANGER} className={s.tipIcon} />
-            {t('buyTokensForm.verificationAlert.message')} <a href={routes.KYC_VERIFICATION}>{t('buyTokensForm.verificationAlert.link')}</a>
-          </div>
-        );
-      }
-
-      return null;
-    };
-
-    const renderContributionAlert = () => (
-      <div className={cx(s.alert, 'pt-callout pt-intent-primary')}>
-        <Icon icon='info-sign' intent={Intent.PRIMARY} className={s.tipIcon} />
-        <a href="https://t.me/el_tonyl" target="_blank">Contact us</a> if you need a dashboard like this for your crowdsale
-      </div>
-    );
-
     return (
       <div className={s.form}>
         <h2>Buy SPACE tokens</h2>
@@ -166,10 +144,6 @@ class BuyTokensForm extends Component {
           <div className={cx(s.gas, 'pt-text-muted')}>
             <span title={expectedTxFee}>{t('buyTokensForm.gasFee')} {renderIfAvailable(expectedTxFee)} ETH</span>
             <span title={minInvest}>{t('buyTokensForm.minContribution')} {renderIfAvailable(minInvest)} ETH</span>
-          </div>
-          <div className={s.alertsSection}>
-            {renderVerificationAlert()}
-            {renderContributionAlert()}
           </div>
         </div>
 
